@@ -1,0 +1,919 @@
+=== Dropdown ===
+Keyboard Support
+  <Paragraph> The keyboard support only applies to dropdowns that use the
+    description: 'Opens menu and moves focus to the first menu item.'
+    description: 'Opens menu and moves focus to the last menu item.'
+    description: 'Opens menu and moves focus to the first menu item.'
+    description: 'Opens menu and moves focus to the first menu item.'
+  <Button type={ Button.ButtonTypes.BORDERLESS } aria-label="Show options">
+    <TripleDotVerticalIcon aria-hidden="true" />
+    <Button type={ Button.ButtonTypes.BORDERLESS } aria-label="Show options">
+      <TripleDotVerticalIcon aria-hidden="true" />
+        <Alert aria-live="off" inline={ true } type={ Alert.AlertTypes.ERROR }
+      aria-label="Open dropdown"
+      <TriangleLeftIcon aria-hidden="true" />
+      <Button type={ Button.ButtonTypes.SECONDARY } aria-label="Open dropdown">
+        <TriangleUpIcon style={ { transform: 'rotate(-45deg)' } } aria-hidden="true" />
+      <Button aria-label="Open dropdown"><TriangleUpIcon aria-hidden="true" /></Button>
+      <Button type={ Button.ButtonTypes.SECONDARY } aria-label="Open dropdown">
+        <TriangleUpIcon style={ { transform: 'rotate(45deg)' } } aria-hidden="true" />
+      <Button type={ Button.ButtonTypes.SECONDARY } aria-label="Open dropdown">
+        <TriangleLeftIcon style={ { transform: 'rotate(45deg)' } } aria-hidden="true" />
+      <Button type={ Button.ButtonTypes.SECONDARY } aria-label="Open dropdown">
+        <TriangleRightIcon style={ { transform: 'rotate(-45deg)' } } aria-hidden="true" />
+      <Button aria-label="Open dropdown"><TriangleLeftIcon aria-hidden="true" /></Button>
+      <Button aria-label="Open dropdown"><TriangleRightIcon aria-hidden="true" /></Button>
+      <Button type={ Button.ButtonTypes.SECONDARY } aria-label="Open dropdown">
+        <TriangleLeftIcon style={ { transform: 'rotate(-45deg)' } } aria-hidden="true" />
+      <Button type={ Button.ButtonTypes.SECONDARY } aria-label="Open dropdown">
+        <TriangleRightIcon style={ { transform: 'rotate(45deg)' } } aria-hidden="true" />
+      aria-label="Open dropdown"
+      <TriangleLeftIcon aria-hidden="true" />
+      <Button type={ Button.ButtonTypes.SECONDARY } aria-label="Open dropdown">
+        <TriangleDownIcon style={ { transform: 'rotate(45deg)' } } aria-hidden="true" />
+      <Button aria-label="Open dropdown"><TriangleDownIcon aria-hidden="true" /></Button>
+      <Button type={ Button.ButtonTypes.SECONDARY } aria-label="Open dropdown">
+        <TriangleDownIcon style={ { transform: 'rotate(-45deg)' } } aria-hidden="true" />
+
+=== Dropdown ===
+const message = 'A11y consideration: By design right click are meant to provide mouse users an alternative quick way to perform actions.  For A11y compliance, be sure the main way to perform these same actions offered via right click in your application are keyboard and assistive reader friendly.';
+
+=== Tables ===
+<WidgetTable rowKey="key" dataSource={ data } columns={ columns } aria-label="Demo table" />
+    aria-labelledby="widget-table-title"
+    aria-describedby="widget-table-desc"
+  aria-label="Widget table with header"
+
+=== Tables ===
+        accessibility. As such, it operates within that element's constraints.
+    aria-label="Basic table"
+          In order to hide headers and not have them rendered for screen readers,
+  <Alert inline={ true } message="Notice the disabled table row checkbox is focusable. Since there is limited space, the table checkbox uses aria-disabled instead of disabled property to support tooltips." />
+            'aria-label': `Select ${rowData.name}`
+  <Alert inline={ true } message="Notice the disabled table row radio is focusable. Since there is limited space, the table radio uses aria-disabled instead of disabled property to support tooltips." />
+          <Button type="icon-secondary" aria-label={ label }>
+        // Note: When using custom title, ensure aria-label must be manually set for Sorter.
+          'aria-label': 'Name sorted none',
+        newState.sort.columnsSorterProps.name['aria-label'] = `Name sorted ${order}`;
+        newState.sort.columnsSorterProps.name['aria-label'] = 'Name sorted none';
+      <Badge color="green" count="Accessibility" />
+      <strong>aria-sort</strong> with the appropriate value.
+        aria-labelledby={ titleId }
+    aria-live="off"
+    message="This example uses a custom Title component. When providing your own component, ensure you also assign your own custom aria-id."
+      <Badge color="green" count="Accessibility" />
+Data Fetching Example.  Screen reader should read fetching message, fetching done message, or fetch error message when interacting with
+      data-test-id="no-data-first-focus-alert"
+                aria-label="Remove"
+                <RemoveIcon aria-hidden="true" />
+            'aria-label': lbl
+            'aria-disabled': true,
+            'aria-hidden': true,
+        <Button onClick={ () => onChange(key) } type="icon-default" aria-label={ label }>
+  const triggerRef = useRef(null); // Refocus trigger button on close
+      triggerRef.current.focus();
+    aria-live="off"
+        <Alert aria-live="off" inline={ true } type={ Alert.AlertTypes.ERROR }
+
+=== TimePicker ===
+    // trigger focus after modal was closed
+    this.buttonModalTriggerRef.current.focus();
+        <Alert aria-live="off" inline={ true } type={ Alert.AlertTypes.ERROR }
+            popupWrapperProps={ { 'aria-describedby': 'hours-paragraph minutes-paragraph' } }
+use it to manually focus the input, like so:
+    timePickerInputRef.current.focus();
+        Focus Input
+Time Picker clear button props. Allows passing custom props to the clear button, such as overriding the aria-label or adding test attributes.
+      'aria-label': 'Clear selected time'
+
+=== Form ===
+      aria-required={ true }
+
+=== Tooltip ===
+      <Badge color="green" count="Accessibility" />
+    <Badge color="green" count="Accessibility" />
+        , non-actionable content by mouse hover or keyboard focus.
+  <Button appearance="underline" type={ Button.ButtonTypes.TEXT_NORMAL } data-test-id="open-tooltip-tooltip" aria-disabled={ true }>You can't trigger me even if you tried!</Button>
+      <Badge statusIcon={ <AlertTriangleIcon aria-label="error" aria-hidden="false" /> } color="red" text="1" />
+      <Badge statusIcon={ <InformationStatusIcon aria-label="info" aria-hidden="false" /> } color="gray" text="0" />
+      <Badge statusIcon={ <WarningStatusIcon aria-label="warning" aria-hidden="false" /> } color="yellow" text="21" />
+  <FlexItem aria-describedby={ myAriaId } htmlTag="button">
+        <Alert aria-live="off" inline={ true } type={ Alert.AlertTypes.ERROR }
+        aria-describedby={ blockId } type={ type }>
+          <Button appearance="mini" type="secondary" aria-label={ label } aria-describedby={ inlineId }>
+      icon: <TriangleUpIcon style={ { transform: 'rotate(-45deg)' } } aria-hidden="true" />,
+      icon: <TriangleUpIcon aria-hidden="true" />
+      icon: <TriangleUpIcon style={ { transform: 'rotate(45deg)' } } aria-hidden="true" />,
+      icon: <TriangleLeftIcon style={ { transform: 'rotate(45deg)' } } aria-hidden="true" />,
+      icon: <TriangleRightIcon style={ { transform: 'rotate(-45deg)' } } aria-hidden="true" />,
+      icon: <TriangleLeftIcon aria-hidden="true" />
+      icon: <TriangleRightIcon aria-hidden="true" />
+      icon: <TriangleLeftIcon style={ { transform: 'rotate(-45deg)' } } aria-hidden="true" />,
+      icon: <TriangleRightIcon style={ { transform: 'rotate(45deg)' } } aria-hidden="true" />,
+      icon: <TriangleDownIcon style={ { transform: 'rotate(45deg)' } } aria-hidden="true" />,
+      icon: <TriangleDownIcon aria-hidden="true" />
+      icon: <TriangleDownIcon style={ { transform: 'rotate(-45deg)' } } aria-hidden="true" />,
+const message = 'Screen reader users experience tooltip content as a single text string without any added semantic information. Tooltips are only meant to contain simple messages.';
+    <Button appearance="transparent-mini" aria-describedby={ mytimeId }><TimeIcon aria-label="Download Status Icon" aria-hidden="false" /></Button>
+const message = 'Controlled tooltip examples DO NOT meet accessibility standards and are here only as API reference. Please reach out to the accessibility team before implementing something similar in production.';
+            onFocus={ () => setRedIsHover(true) }
+            <QuestionIcon aria-label="hover me icon" aria-hidden="false" />
+            onFocus={ () => setBlueIsHover(true) }
+            <QuestionIcon aria-label="hover me icon" aria-hidden="false" />
+            onFocus={ () => setRedIsHover(true) }
+            <QuestionIcon aria-label="hover me icon" aria-hidden="false" />
+            onFocus={ () => setBlueIsHover(true) }
+            <QuestionIcon aria-label="hover me icon" aria-hidden="false" />
+
+=== Tooltip ===
+      This is component deprecated and is not A11y compliant. Please use the new
+  <FlexItem aria-describedby={ myAriaId } htmlTag="button">
+    <Alert aria-live="off" inline={ true } type={ Alert.AlertTypes.SUCCESS } message="Do" />
+    <Alert aria-live="off" inline={ true } type={ Alert.AlertTypes.ERROR } message="Don't" />
+
+=== Calendar ===
+        <Alert aria-live="off" inline={ true } type={ Alert.AlertTypes.ERROR }
+
+=== Radio ===
+Accessibility Guidelines
+        For accessibility compliance, make sure to use
+        Placing focusable elements on radio labels should be discouraged. This can break the
+        natural tab order for keyboard users.
+  <Radio id="radio-aria-disabled-selected" checked={ true } aria-disabled="true"
+    wrapperProps={ { 'data-test-id': 'aria-disabled-radio' } }>Aria Disabled Selected</Radio>
+      aria-disabled="true"
+
+=== Radio ===
+            My label is automatically set using "aria-labelledby".
+            aria-label={ 'Manually inserted "aria-label".' }
+            additionalInfo={ 'You must add the "aria-label" or "aria-labelledby" yourself for non text based children!' }
+            <span>I am wrapped by a span tag. My accessibility label must be manually set.</span>
+            aria-describedby="support-1 support-2"
+    The Radio component will automatically add the "aria-labelledby" tag when the children passed down is only text.
+    The Radio component will automatically add the "aria-describedby" tag when additionalInfo prop is provided.
+    The behaviour when using focus from browser to browser is the native one. The difference can been seen when hitting "Tab".
+function A11yReadMe() {
+          Accessibility Guidelines
+              When that's not possible, use wrapperProps['aria-label'] to set a hidden title.
+              Placing focusable elements on radio labels should be discouraged. This can break the
+              natural tab order for keyboard users.
+<A11yReadMe />
+            aria-label={ 'Manually inserted "aria-label".' }
+            Placing focusable elements on radio labels should be discouraged. This can break the
+            natural tab order for keyboard users.
+            aria-label={ 'Manually inserted "aria-label".' }
+                  'I\'ve broken the focus flow! Avoid using me unless you absolutely need to!',
+            aria-label={ 'Manually inserted "aria-label".' }
+function A11yReadMe() {
+          Focus Flow
+          You lack focus! Hit TAB now.
+<A11yReadMe />
+        aria-labelledby="custom-title"
+        aria-describedby="custom-description"
+      ID to the radiogroup with aria-labelledby and aria-describedby
+
+=== Progress ===
+  message="All progress bars need an accessible label. If you hide the default label, you must add either ariaLabel or aria-labelledby."
+  <Paragraph>Here we hide the default label and use aria-lablledby to add custom labeling.</Paragraph>
+    aria-labelledby="custom-id-3 custom-id-4"
+  <Badge color="green" count="Accessibility" />
+     make sure it is no longer focusable for keyboard users.
+      count="Accessibility"
+          support accessibility guidelines.
+  message="Circle type progress bars do not provide a label by default. You must add either ariaLabel or aria-labelledby to meet accessibility standards."
+                  <CloseIcon aria-label="danger" color={ ThemeManager.getVar('red-1') } />
+                  <CheckMarkIcon aria-label="success" color={ ThemeManager.getVar('green-1') } />
+    aria-live="off"
+
+=== Input ===
+            The component has internal validation for date format implemented and kept despite a11y
+        <Alert aria-live="off" inline={ true } type={ Alert.AlertTypes.ERROR }
+By default the calendar dropdown is open on focus or click of the input field and close
+upon click outside, or tab to lose focus.
+        count="Accessibility"
+      Please note that opening the dropdown on hover can cause numerous accessibility issues.
+use it to manually focus the input, like so:
+    datePickerInputRef.current.focus();
+                Focus Input
+
+=== Input ===
+  <Alert aria-live="off" inline={ true } type={ Alert.AlertTypes.ERROR }
+Override aria-label for show/hide component, otherwise it will default to 
+InputPassword with custom show/hide icons and a customized aria-label for the show/hide components
+
+=== Favorite ===
+Disabled and Aria-Disabled Favorites
+      aria-live="off"
+      message="Warning! Apply aria-disabled only when focusability is needed with a specific requirement to show reason why it is disabled. In such cases, consider adding a Tooltip to provide the reason."
+        aria-disabled={ true }
+        data-test="aria-disabled-favorite-regular-unchecked"
+        aria-disabled={ true }
+        data-test="aria-disabled-favorite-regular-checked"
+        aria-disabled={ true }
+        data-test="aria-disabled-favorite-navigation-unchecked"
+        aria-disabled={ true }
+        data-test="aria-disabled-favorite-navigation-checked"
+
+=== Input ===
+  <InputAddon focus={ 'true' } />
+  <InputAddon type="prefix" focus={ 'true' } />
+    <InputAddon appearance="borderless" focus={ 'true' } />
+  <InputAddon appearance="nested" focus={ 'true' } />
+        <Alert aria-live="off" inline={ true } type={ Alert.AlertTypes.ERROR }
+          <InputAddon background="alt" focus={ 'true' } />
+          <InputAddon background="base" focus={ 'true' } />
+
+=== Input ===
+  <Badge color="green" count="Accessibility" />
+        Placeholder text is <strong>not</strong> a replacement for a label. Screen readers don't
+          Marking a field <code>disabled</code> will hide it from screen readers completely! Use
+        Secondary labels are generally <strong>not</strong> supported by screen readers and should
+      <Badge color="green" count="Accessibility" />
+      Icons that convey information (such as the state of loading data) need to be available for screen readers.
+      They should have <code>aria-hidden</code> set to <code>false</code> and
+      have an <code>aria-label</code> that serves as a text alternative.
+          id="a11y-bad-example"
+              aria-label="Select me first"
+          id="a11y-good-example-1"
+              aria-label="Select me first"
+          id="a11y-good-example-2"
+        aria-required={ true }
+
+=== Input ===
+        <Alert aria-live="off" inline={ true } type={ Alert.AlertTypes.ERROR }
+
+=== Input ===
+        suffix={ <Button type="icon-default" appearance="mini" onClick={ handleRemoveSelectedFile } aria-label="remove"><CloseIcon size="small" /></Button> } />
+            suffix={ <Button type="icon-default" appearance="mini" onClick={ handleOpenSelectFile } aria-label="upload"><UploadIcon /></Button> }
+
+=== Input ===
+However going forward for better a11y support we recommend to
+override the default keyboard navigation behavior by setting the following as shown here in this example:
+And for better screen reader support override the following props:<br>
+Screen Reader: Custom Assertive Message Example
+        <Alert aria-live="off" inline={ true } type={ Alert.AlertTypes.ERROR }
+DO NOT USE - This is the default keyboard entry/delete behavior for testing
+Keyboard support
+
+=== Input ===
+      Selecting a date should close the dropdown and move focus back to the trigger label.
+By default, ‘Select Date’ is a generic label. For A11y, consider providing a more descriptive label by setting inputProps.aria-label.
+  inputProps={ { 'aria-label': 'Date of Birth' } }
+        <Alert aria-live="off" inline={ true } type={ Alert.AlertTypes.ERROR }
+
+=== Input ===
+        <Alert aria-live="off" inline={ true } type={ Alert.AlertTypes.ERROR }
+
+=== Notification ===
+  <Badge color="green" count="Accessibility" />
+  <Title size="h3">Notifications with actions can cause problems for keyboard users.</Title>
+    Since the notification is added to the end of the DOM and doesn't receive keyboard focus when opened,
+    keyboard users need to tab through the entire page to get to
+    other content and be difficult for keyboard users to dismiss.
+
+=== Alert ===
+      count="Accessibility"
+    aria-live="off" to force the reader to not announce all messages. So if you are cutting and
+    pasting be sure to remove aria-live="off".
+      'If aria-live is off role will be ignored if not provided as prop.'
+  aria-live="off"
+      aria-live="off"
+              aria-live="off"
+  <AlertWithLink alertType={ Alert.AlertTypes.WARNING } aria-live="off" />
+  <AlertWithLink alertType={ Alert.AlertTypes.ERROR } aria-live="off" />
+When this alert is shown you should draw the focus to it. In order to achieve that you should put a focusable element inside
+the alert and focus that element. You can assign a ref to that inner element and directly invoke the focus:
+// @example-id focusable-alert
+    linkRef.current.focus();
+        data-test-id="focusable-alert"
+
+=== Accordion ===
+  <Accordion title="Aria-disabled Section" aria-disabled={ true } data-test-id="aria-disabled-accordion">
+
+=== Separator ===
+  <Button><PlusIcon aria-hidden="true" /> Primary</Button>
+    Secondary <MagGlassIcon aria-hidden="true" />
+
+=== Checkbox ===
+            aria-disabled={ true }
+            aria-disabled={ true }
+            aria-disabled={ true }
+            aria-disabled={ true }
+            aria-disabled={ true }
+            aria-disabled={ true }
+            aria-disabled={ true }
+      <Badge color="green" count="Accessibility" />
+      Aria Disabled (focusable disabled checkbox) is recommended for limited space scenarios such as
+          <Badge color="green" count="Accessibility" />
+      <Badge color="green" count="Accessibility" />
+
+=== Navigation ===
+        aria-labelledby={ `${props.id}-${activeTab}` }
+        aria-labelledby={ `${props.id}-${activeTab}` }
+        aria-labelledby={ `${props.id}-${activeTab}` }
+        aria-labelledby={ `${props.id}-${activeTab}` }
+        aria-labelledby={ `${props.id}-${activeTab}` }
+        aria-labelledby={ `${tabsId}-${activeTab}` }
+        aria-labelledby={ activeTab }
+          aria-live="off"
+            aria-labelledby={ `${props.id}-${activeTab}` }
+        aria-labelledby={ `${tabsId}-${activeTab}` }
+        aria-labelledby={ `${tabsId}-${activeTab}` }
+      onFocus: () => {
+        linkRef.current && linkRef.current.focus();
+        aria-labelledby={ `${props.id}-${activeTab}` }
+        This method is not compliant with A11y due to the nesting of interactive elements.
+        Please refer to the examples below for an a11y compliant alternative.
+**NEW - A11y compliant:** Using nested Tabs. This is useful if the number of tabs on the bar are
+        data-test-id="with-dropdown-a11y"
+        aria-labelledby={ panelLabelId }
+        <Badge color="green" count="A11y" />
+        This method is compliant with A11y, providing proper HTML nesting, assistive tech support
+        and keyboard navigation
+
+=== Navigation ===
+          aria-labelledby={ `${this.tabsId}-${activeTab.key}` }
+          aria-labelledby={ `${this.props.id}-${activeTab.key}` }
+          aria-labelledby={ `${this.props.id}-${activeTab.key}` }
+    aria-live="off"
+          <Badge color="green" count="Accessibility" />
+        aria-label="Switch between On and Off"
+          'aria-checked': activeTab.key === 'on' ? 'true' : 'false'
+        aria-labelledby={ `view-switcher-tabs-${activeTab.key}` }
+
+=== Navigation ===
+  <Badge color="green" count="Accessibility" />
+      pageSizeOptionsProps to set either aria-labelledby (if there is a visible label)
+      or aria-label.
+      'aria-label': 'Select table row'
+
+=== Navigation ===
+          aria-labelledby={ current }
+          aria-labelledby={ current }
+        <ChevronLeftIcon aria-hidden="true" /> Back
+          aria-labelledby={ current }
+          aria-labelledby={ current }
+
+=== Navigation ===
+            Accessibility Tips for Free
+            Hi! I am your accessibility helper with some tips free of charge. Donations are of
+            'Errors: Add aria-invalid="true" and aria-errormessage="<MESSAGE_CONTAINER_ID>" to AnchorLinks that have errors.',
+            'When clicking an anchor, the focus should move to the first focusable item in the section when applicable.'
+      this.listRef[key].focus();
+    let icon = <UnlockIcon aria-hidden="true" />;
+      icon = <LockIcon aria-hidden="true" />;
+        aria-checked={ fixed }
+        aria-label={ label }
+              aria-invalid={ true }
+              aria-errormessage={ errorId }
+      aria-invalid={ true }
+      aria-errormessage={ errorId }
+
+=== Navigation ===
+          aria-label="Filter items"
+
+=== Navigation ===
+        aria-label="breadcrumbs"
+          aria-label="breadcrumbs"
+<Breadcrumb aria-label="breadcrumbs">
+    <BreadcrumbItem aria-label="breadcrumbs item" key={ id }>
+<Breadcrumb aria-label="breadcrumbs">
+  <BreadcrumbItem aria-label="breadcrumbs item">
+      toggleButtonRef.current.focus();
+          aria-label="Show breadcrumb content"
+          <ChevronDownIcon aria-hidden="true" />
+    <Breadcrumb aria-label="breadcrumbs">
+            aria-label="breadcrumbs item"
+
+=== Slider ===
+          'aria-describedby': 'slider-helptext-id'
+          'aria-describedby': 'slider-helptext-id'
+Keyboard handling when focusing on the Slider mark button.
+Keyboard handling when focusing on the input field.
+
+=== Carousel ===
+A11y usage.
+// @example-id a11y
+    'aria-label': 'Porsche 718'
+    'aria-label': 'Porsche 911'
+    'aria-label': 'Porsche Taycan'
+    'aria-label': 'Porsche Panamera'
+    'aria-label': 'Porsche Macan'
+    'aria-label': 'Porsche Cayenne'
+  'data-test-id': 'a11y',
+  'aria-label': 'Porsche'
+over all enabled slides on initial start.  When user interact with hover/focus on carousel, animation will auto pause
+and animation will auto resume again on hover/focus out.  Clicking on the pause/play button will override the
+default hover/focus auto pause/play behavior.  For accessible users who have set 'Reduce motion' on, the
+Without steps.  For accessibility support this usage is highly discourage.
+
+=== Popover ===
+      <Badge color="green" count="A11y" />
+  // Refocus trigger button on close
+      triggerRef.current.focus();
+    'AI Mode - You will never have to code again! Let alone touch a keyboard!',
+  // Refocus trigger button on close
+      triggerRef.current.focus();
+  const handleKeyboardBtn = (e) => {
+            onKeyDown={ (e) => handleKeyboardBtn(e) }
+            onKeyDown={ (e) => handleKeyboardBtn(e) }
+  // Refocus trigger button on close
+      triggerRef.current.focus();
+        <TriangleUpIcon style={ { transform: 'rotate(-45deg)' } } aria-hidden="true" />
+      <Button aria-label="Show popover"><TriangleUpIcon aria-hidden="true" /></Button>
+      <Button type={ Button.ButtonTypes.SECONDARY } aria-label="Show popover">
+        <TriangleUpIcon style={ { transform: 'rotate(45deg)' } } aria-hidden="true" />
+      <Button type={ Button.ButtonTypes.SECONDARY } aria-label="Show popover">
+        <TriangleLeftIcon style={ { transform: 'rotate(45deg)' } } aria-hidden="true" />
+      <Button type={ Button.ButtonTypes.SECONDARY } aria-label="Show popover">
+        <TriangleRightIcon style={ { transform: 'rotate(-45deg)' } } aria-hidden="true" />
+      <Button><TriangleLeftIcon aria-hidden="true" /></Button>
+      <Button><TriangleRightIcon aria-hidden="true" /></Button>
+        <TriangleLeftIcon style={ { transform: 'rotate(-45deg)' } } aria-hidden="true" />
+        <TriangleRightIcon style={ { transform: 'rotate(45deg)' } } aria-hidden="true" />
+        <TriangleDownIcon style={ { transform: 'rotate(45deg)' } } aria-hidden="true" />
+      <Button><TriangleDownIcon aria-hidden="true" /></Button>
+        <TriangleDownIcon style={ { transform: 'rotate(-45deg)' } } aria-hidden="true" />
+
+=== Popover ===
+      <Badge color="green" count="A11y" />
+    'AI Mode - You will never have to code again! Let alone touch a keyboard!',
+      restoreFocus={ true }
+  const handleKeyboardBtn = (e) => {
+            onKeyDown={ (e) => handleKeyboardBtn(e) }
+            onKeyDown={ (e) => handleKeyboardBtn(e) }
+        restoreFocus={ true }
+      restoreFocus={ true }
+        aria-describedby={ blockId } type={ type }>
+          <div aria-label={ label } aria-describedby={ inlineId }>
+      icon: <TriangleUpIcon style={ { transform: 'rotate(-45deg)' } } aria-hidden="true" />,
+      icon: <TriangleUpIcon aria-hidden="true" />
+      icon: <TriangleUpIcon style={ { transform: 'rotate(45deg)' } } aria-hidden="true" />,
+      icon: <TriangleLeftIcon style={ { transform: 'rotate(45deg)' } } aria-hidden="true" />,
+      icon: <TriangleRightIcon style={ { transform: 'rotate(-45deg)' } } aria-hidden="true" />,
+      icon: <TriangleLeftIcon aria-hidden="true" />
+      icon: <TriangleRightIcon aria-hidden="true" />
+      icon: <TriangleLeftIcon style={ { transform: 'rotate(-45deg)' } } aria-hidden="true" />,
+      icon: <TriangleRightIcon style={ { transform: 'rotate(45deg)' } } aria-hidden="true" />,
+      icon: <TriangleDownIcon style={ { transform: 'rotate(45deg)' } } aria-hidden="true" />,
+      icon: <TriangleDownIcon aria-hidden="true" />
+      icon: <TriangleDownIcon style={ { transform: 'rotate(-45deg)' } } aria-hidden="true" />,
+            trapFocus={ false }
+  // Refocus trigger button on close
+      triggerRef.current.focus();
+
+=== Dashboard ===
+      aria-label="Filter"
+      <IconBtn icon={ <FilterIcon /> } aria-label="Filter" />
+      <IconBtn icon={ <TimeIcon /> } aria-label="Time Picker" />
+      <IconBtn icon={ <SettingsIcon /> } aria-label="Settings" />
+      aria-label="Filter"
+      <IconBtn icon={ <FilterIcon /> } aria-label="Filter" />
+      <IconBtn icon={ <TimeIcon /> } aria-label="Time Picker" />
+      <IconBtn icon={ <SettingsIcon /> } aria-label="Settings" />
+
+=== Dashboard ===
+    `A11y Notice: Please ensure the widget layout order in the DOM sequentially matches the same
+    order rendered on page. Otherwise, this could adversely affect the tab order for keyboard and
+    screen reader users.`
+
+=== TextArea ===
+        <Alert aria-live="off" inline={ true } type={ Alert.AlertTypes.ERROR }
+
+=== Button ===
+    <Button aria-label="Settings"><SettingsIcon aria-hidden="true" /></Button>
+      <Button aria-label="More options"><PlusIcon size="small" aria-hidden="true" /></Button>
+    <Button aria-label="Settings" type={ Button.ButtonTypes.SECONDARY }><SettingsIcon /></Button>
+      <Button type={ Button.ButtonTypes.SECONDARY } aria-label="More">
+        <PlusIcon size="small" aria-hidden="true" />
+    <Button aria-label="Settings" type={ Button.ButtonTypes.DESTRUCTIVE }><SettingsIcon /></Button>
+      <Button type={ Button.ButtonTypes.DESTRUCTIVE } aria-label="More">
+        <PlusIcon size="small" aria-hidden="true" />
+
+=== Button ===
+  'If a button does not have text (such as an icon button), an aria-label that describes what the button does should be added',
+  'If the button text does not include enough context to be descriptive, use either aria-labelledby (if there is nearby visible text that can provide context) or an aria-label'
+    <Badge color="green" count="Accessibility" />
+    <Paragraph>If an aria-label (or aria-labelledby) is used on a button with visible text,
+    the visible text must be the START of the aria-label</Paragraph>
+        <Button aria-label="Toggle options dropdown">
+          <ChevronDownIcon aria-hidden="true" />
+        aria-label="Remove Filter"
+        <MinusIcon aria-hidden="true" />
+Accessibility Guidelines when using Button with Count
+        context of the action for screen reader support. For example, the aria label "Upgrade 1 VM"
+        aria-label="Upgrade 1 VM"
+        aria-label="Upgrade 2 VMs"
+        By default the aria-label will use a generic context value of "item" or "items" based on the
+      'Pass only `disabled` or `aria-disabled` prop to Button.',
+      'Button with `aria-disabled` prop enables Tab/Focus on disabled fields and works with voice over.',
+      'Button with `disabled` prop skips the element on Tab/Focus.'
+      'Using both `disabled` and `aria-disabled`.  `disabled` will be ignored.'
+When should you use `disabled` or `aria-disabled` attribute?
+    <TextLabel type="primary" size="small">aria-disabled</TextLabel> should be used instead.
+    These interactions may include the ability preserve the focus position on a pagination element
+    tooltip upon focus.
+    <Button aria-disabled={ true }>Aria Disabled Deploy</Button>
+    <Button count={ 1 } aria-disabled={ true }>Aria Disabled Deploy</Button>
+      <Button type={ Button.ButtonTypes.SECONDARY } aria-disabled={ true }>
+      <Button count={ 1 } type={ Button.ButtonTypes.SECONDARY } aria-disabled={ true }>
+      <Button type={ Button.ButtonTypes.SECONDARY } aria-disabled={ true }>
+      <Button count={ 1 } type={ Button.ButtonTypes.SECONDARY } aria-disabled={ true }>
+      <Button type={ Button.ButtonTypes.SECONDARY } aria-disabled={ true }>
+      <Button count={ 1 } type={ Button.ButtonTypes.SECONDARY } aria-disabled={ true }>
+    <Button type="destructive" aria-disabled={ true }>Aria Disabled Cancel</Button>
+    <Button count={ 1 } type={ Button.ButtonTypes.DESTRUCTIVE } aria-disabled={ true }>
+  <Button type={ Button.ButtonTypes.SUCCESS } aria-disabled={ true }>
+  <Button type={ Button.ButtonTypes.WARNING } aria-disabled={ true }>
+    aria-live="off"
+    <Button type={ Button.ButtonTypes.BORDERLESS } aria-disabled={ true }>
+    <Button count={ 1 } type={ Button.ButtonTypes.BORDERLESS } aria-disabled={ true }>
+          aria-label="Toggle options dropdown"
+          <ChevronDownIcon aria-hidden="true" />
+        aria-label="Go back to previous page"
+        <ChevronLeftIcon aria-hidden="true" /> Previous
+        aria-label="Save this config"
+        Save <PlusIcon aria-hidden="true" size="small" />
+      <Button type={ Button.ButtonTypes.NAVIGATION_PRIMARY } aria-disabled={ true }>
+        aria-label="Go back to previous page"
+        <ChevronLeftIcon aria-hidden="true" /> Previous
+        aria-label="Save this config"
+        Save <PlusIcon aria-hidden="true" size="small" />
+      <Button type={ Button.ButtonTypes.NAVIGATION_SECONDARY } aria-disabled={ true }>
+        aria-label="Go back to previous page"
+        <ChevronLeftIcon aria-hidden="true" /> Previous
+        aria-label="Save this config"
+        Save <PlusIcon aria-hidden="true" size="small" />
+      <Button type={ Button.ButtonTypes.NAVIGATION_SECONDARY } aria-disabled={ true }>
+      <Button type={ Button.ButtonTypes.NAVIGATION_DESTRUCTIVE } aria-disabled={ true }>
+      aria-live="off"
+      <Button type={ Button.ButtonTypes.NAVIGATION_BORDERLESS } aria-disabled={ true }>
+                  'aria-disabled': true
+    aria-label="Home"
+    icon={ <HomeIcon aria-hidden="true" /> }
+    aria-label="Home"
+    icon={ <HomeIcon aria-hidden="true" /> }
+    aria-label="Home"
+    icon={ <HomeIcon aria-hidden="true" /> }
+    aria-label="Home"
+    icon={ <HomeIcon aria-hidden="true" /> }
+  if (props['aria-disabled']) {
+    <ButtonList aria-disabled={ true } { ...props } />
+    aria-live="off"
+        <Alert aria-live="off" inline={ true } type={ Alert.AlertTypes.ERROR }
+    <Button><PlusIcon size="small" aria-hidden="true" /> Create VM</Button>
+    <Button disabled={ true }><PlusIcon size="small" aria-hidden="true" /> Create VM</Button>
+      <SettingsIcon aria-hidden="true" /> Settings
+      <SettingsIcon aria-hidden="true" /> Settings
+      <ChevronLeftIcon aria-hidden="true" /> Back
+      Go to Dashboard <ChevronRightIcon aria-hidden="true" />
+    <Button aria-label="Create VM" data-test="tooltip-primary">
+      <PlusIcon size="small" aria-hidden="true" />
+      aria-label="Aria Disabled Create VM"
+      aria-disabled={ true }
+      data-test="tooltip-aria-disabled"
+      <PlusIcon size="small" aria-hidden="true" />
+      aria-label="Disabled Create VM"
+      <PlusIcon size="small" aria-hidden="true" />
+      aria-label="Remove Filter"
+      <MinusIcon aria-hidden="true" />
+    <Button aria-label="Show More" type={ Button.ButtonTypes.SECONDARY }>
+        <DotIcon aria-hidden="true" />
+        <DotIcon aria-hidden="true" />
+        <DotIcon aria-hidden="true" />
+      <PlusIcon size="small" aria-hidden="true" /><span>Create VM</span>
+          <PlusIcon size="small" aria-hidden="true" /> Create VM
+    <Button appearance="mini" type="secondary" aria-label="Previous">
+      <ChevronLeftIcon aria-hidden="true" />
+    <Button appearance="mini" aria-label="Next"><ChevronRightIcon aria-hidden="true" /></Button>
+      aria-label="Previous"
+      <ChevronCutoutLeftIcon aria-hidden="true" />
+    <Button appearance="transparent-mini" aria-label="Next">
+      <ChevronCutoutRightIcon aria-hidden="true" />
+      aria-label="Toggle options dropdown"
+      <ChevronDownIcon aria-hidden="true" />
+          <ChevronRightIcon aria-hidden="true" />
+          <ChevronLeftIcon aria-hidden="true" />
+
+=== Layouts ===
+    <AlertIcon aria-label="Alert Icon" size="large" color={ ThemeManager.getVar('red-1') } />
+      suffix={ <Favorite aria-label="Favorite Icon" background="dark" checked={ true } /> }
+      prefix={ <MagGlassIcon aria-label="Search Icon" color={ ThemeManager.getVar('gray-2') } /> }
+    <AlertIcon aria-label="Alert Icon" size="large" color={ ThemeManager.getVar('red-1') } />
+    <MagGlassIcon aria-label="MagGlass Icon" color="dark" />
+    <QuestionIcon aria-label="Question Icon" color="dark" />
+    <SettingsIcon aria-label="Settings Icon" color="dark" />
+      <AlertIcon aria-label="Alert Icon" size="large" color={ ThemeManager.getVar('red-1') } />
+      <AlertIcon aria-label="Alert Icon" size="large" color={ ThemeManager.getVar('red-1') } />
+    <MagGlassIcon aria-label="MagGlass Icon" color="dark" />
+    <QuestionIcon aria-label="Question Icon" color="dark" />
+    <SettingsIcon aria-label="Settings Icon" color="dark" />
+      <AlertIcon aria-label="Alert icon" size="large" color={ ThemeManager.getVar('red-1') } />
+        suffix={ <Favorite aria-label="Favorite icon" background="dark" checked={ true } /> }
+          <MagGlassIcon aria-label="MagGlass icon" color={ ThemeManager.getVar('gray-2') } /> }
+      <AlertIcon aria-label="Alert icon" size="large" color={ ThemeManager.getVar('red-1') } />
+
+=== Layouts ===
+                  enableFocusTrap={ true }
+                  restoreFocus={ true }
+  enableFocusTrap,
+        enableFocusTrap={ enableFocusTrap }
+        restoreFocus={ true }
+  const [enableFocusTrap, setEnableFocusTrap] = React.useState(false);
+  const handleFocusTrapClick = () => {
+    setEnableFocusTrap(!enableFocusTrap);
+              aria-label={ `Open ${value} in side panel` }
+          When focus trap is enabled, hit SPACE or ENTER on a row and you will see the focus being
+          confined to the side panel container. The side panel will need to be closed to exit to the focus trap.
+          You can press the close button or hit the Escape Key to close the side panel with keyboard. Also, when
+          using this feature ensure the focus returns to the triggered element when the side panel is closed.` }
+            id="focus-trap-toggle-id"
+            checked={ enableFocusTrap }
+            onChange={ handleFocusTrapClick }
+            label="Enable Focus Trap"
+            enableFocusTrap={ enableFocusTrap }
+
+=== Layouts ===
+  <Button><PlusIcon size="small" aria-hidden="true" /> Add</Button>
+
+=== Loader ===
+    <Badge color="green" count="Accessibility" />
+      href="https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-busy"
+      aria-busy
+      <Badge color="green" count="Accessibility" />
+      Elements covered by the overlay may not be focusable by keyboard input.
+      Either set <code>disableFocusOnLoading={ true }</code> or manually take care of the interactive elements
+Focus handling example - disableFocusOnLoading={ true }
+// @example-id focus-handling
+      data-test-id="focus-handling"
+      disableFocusOnLoading={ true }
+        <Button data-test-id="focus-handling-button">Submit</Button>
+      <Badge color="green" count="disableFocusOnLoading" />
+      Focusing an element that is later overlayed with loader will preserve focus
+Focus handling example with underlying ref
+// @example-id focus-handling
+        disableFocusOnLoading={ true }
+If no `tip` nor `aria-label` prop is provided, use the default "Loading" text
+  <Badge color="green" count="Accessibility" />
+If `tip` prop is provided, it will be used for `aria-label`, otherwise it will default to "Loading" text if nothing is provided
+  <Badge color="green" count="Accessibility" />
+If we have both `aria-label` and `tip`, `aria-label` will have higher priority for screen readers
+  <Badge color="green" count="Accessibility" />
+    aria-label="Loading VM instance..." />
+
+=== Divider ===
+        <Button onClick={ onClose } type="icon-default" aria-label="Close sidebar">
+          <PushRightIcon aria-hidden="true" />
+
+=== Typography ===
+        count="Accessibility"
+      The semantic heading levels have meanings especially for screen reader users. Use the `tag`
+
+=== Typography ===
+      <Badge color="green" count="Accessibility" />
+      'aria-label': 'Read More'
+
+=== Typography ===
+      <Badge color="green" count="Accessibility" />
+      <code>props.underline=true</code> by default to meet A11y guidelines.
+    aria-live="off"
+      <Badge color="green" count="Accessibility" />
+      Assistive technology (such as screen readers)
+    aria-live="off"
+          <Link data-test-id="link-icon-default" type="icon-default" aria-label="help">
+          <Link data-test-id="link-icon-default-disabled" type="icon-default" disabled={ true } aria-label="help">
+          <Link type="icon-secondary" aria-label="help">
+          <Link type="icon-secondary" disabled={ true } aria-label="help">
+          <Link type="icon-link" aria-label="help">
+          <Link type="icon-link" disabled={ true } aria-label="help">
+          <Link type="icon-navigation" aria-label="help">
+          <Link type="icon-navigation" disabled={ true } aria-label="help">
+      <Badge color="green" count="Accessibility" />
+      <Link data-test-id="link-nav-primary-icon" type="nav-primary" iconRight={ <ExternalLinkIcon size="small" /> } target="_blank_" aria-label="Open nav primary link in a new tab">Nav Primary Link with Icon</Link>
+      <Link data-test-id="link-nav-primary-icon-disabled" type="nav-primary" disabled={ true } iconRight={ <ExternalLinkIcon /> } size="small" target="_blank_" aria-label="Open nav primary link in a new tab">Nav Primary Link with Icon Disabled</Link>
+      <Link data-test-id="link-nav-secondary-icon" type="nav-secondary" iconRight={ <ExternalLinkIcon size="small" /> } target="_blank_" aria-label="Open nav secondary link in a new tab">Nav Secondary Link with Icon</Link>
+      <Link data-test-id="link-nav-secondary-icon-disabled" type="nav-secondary" iconRight={ <ExternalLinkIcon size="small" /> } target="_blank_" aria-label="Open nav secondary link in a new tab" disabled={ true } >Nav Secondary Link with Icon Disabled</Link>
+      <Link data-test-id="link-nav-info-icon" type="nav-info" iconRight={ <ExternalLinkIcon size="small" /> } target="_blank_" aria-label="Open nav info link in a new tab">Nav Info Link with Icon</Link>
+      <Link data-test-id="link-nav-info-icon-disabled" type="nav-info"iconRight={ <ExternalLinkIcon size="small" /> } target="_blank_" aria-label="Open nav info link in a new tab" disabled={ true }>Nav Info Link with Icon Disabled</Link>
+
+=== Select ===
+         * in order for a11y to work properly.  Here is a quick way
+        treeItemIdPrefix: 'a11y-example-'
+         * in order for a11y to work properly.  Here is a quick way
+        treeItemIdPrefix: 'a11y-example-'
+        treeItemIdPrefix: 'a11y-example-'
+        treeItemIdPrefix: 'a11y-example-'
+        <Alert aria-live="off" inline={ true } type={ Alert.AlertTypes.ERROR }
+Keyboard Handling when input field is in focus.
+  title: 'Tag Focused',
+  key: 'tagFocused'
+  title: 'Row Focused',
+  key: 'rowFocused'
+  tagFocused: 'Yes/No',
+  rowFocused: 'Yes',
+  action: 'Moves focus to a next/previous selected tag.'
+  tagFocused: 'No',
+  rowFocused: 'Yes',
+  action: 'If dropdown is not open then opens it. Focus on first item that matches the input value. If dropdown is opened moves focus to the previous/next available row in the dropdown.'
+  tagFocused: 'No',
+  rowFocused: 'Yes',
+  tagFocused: 'No',
+  rowFocused: 'Yes',
+  action: 'Moves focus to the first/last row in the dropdown.'
+  tagFocused: 'No',
+  rowFocused: 'Yes',
+  action: 'Select/Un-Select to focusing row.  If current focused row is a parent node of the tree'
+  tagFocused: 'Yes',
+  rowFocused: 'No',
+  action: 'Delete the focused tag'
+  tagFocused: 'Yes',
+  rowFocused: 'No',
+  action: 'Remove focus to the focusing tag and switch focus to the first row in the dropdown.'
+  tagFocused: 'N/A',
+  rowFocused: 'N/A',
+  action: 'When typing on the input file to filter, if a tag is currently in focus it will lose focus. Focus will be moved to the first row in the dropdown that matches the searched text.'
+         * in order for a11y to work properly.  Here is a quick way
+        treeItemIdPrefix: 'a11y-example-'
+
+=== Select ===
+TreeView example.  Keyboard navigation: Up/Down Arrows to move focus on item and Space/Enter to select.
+const renderLabelWithTooltip = ({ isFocused, isHover, label, tooltipMessage, id }) => {
+      id={ `my-a11y-tree-${id}-text-label` }
+          visible: !!isFocused || !!isHover,
+  const [currenFocusId, setCurrentFocusId] = useState();
+    treeItemIdPrefix="my-a11y-tree"
+    currentFocusId={ currenFocusId }
+    onFocusIdChange={ (id) => setCurrentFocusId(id) }
+make use of this to control keyboard navigation of the TreeView without focusing
+const renderLabelWithTooltip = ({ isFocused, isHover, label, tooltipMessage, id }) => {
+      id={ `my-a11y-tree-${id}-text-label` }
+          visible: !!isFocused || !!isHover,
+  const [currenFocusId, setCurrentFocusId] = useState();
+        onBlur={ (e) => setCurrentFocusId() }
+        onFocus={ (e) => setCurrentFocusId(treeItemsData[0].id) }
+        currentFocusId={ currenFocusId }
+        onFocusIdChange={ (id) => setCurrentFocusId(id) }
+
+=== Select ===
+    <Badge color="green" count="Accessibility" />
+    message={ `For accessibility purposes, select internally uses aria-controls
+    This feature is particularly useful for taking clean snapshots for Jest and Playwright a11y audits.` }
+      rowRenderer: (row, isSelected, isFocused, dropdownActive) => {
+                visible:(isFocused || this.state.hoveredRow === row) && dropdownActive,
+          aria-live="off"
+        <Alert aria-live="off" inline={ true } type={ Alert.AlertTypes.ERROR }
+              'aria-label': 'Select domain' } }
+                  'aria-label': 'Please select'
+                  'aria-label': 'Select size'
+                    'aria-label': 'Select domain' } }
+                    'aria-label': 'Select domain' } }
+                    'aria-label': 'Select domain' } }
+          'aria-label': 'Select timeframe' } }
+
+=== Modal ===
+    Managing keyboard focus is a common source of confusion when dealing with modals.
+    Please see the section on focus management on the main
+    <Link href="#/Layouts/Sessions?id=modal:~:text=Focus%20Management%20" type="inline" underline={ true }>Modal page</Link> for
+    tips on where to set keyboard focus when the modal is opened or closed.
+          restoreFocus={ true }
+        aria-live="off"
+          restoreFocus={ true }
+                      // mountElement is needed for screen reader support on the Tooltip when nested inside the modal
+                      <span aria-label="Download Status Icon" aria-describedby={ myTooltipId }>
+      <Badge color="green" count="Accessibility" />
+          restoreFocus={ true }
+          restoreFocus={ true }
+              <ChevronLeftIcon aria-hidden="true" /> Back
+          restoreFocus={ true }
+              <ChevronLeftIcon aria-hidden="true" /> Back
+          restoreFocus={ true }
+          restoreFocus={ true }
+          restoreFocus={ true }
+          restoreFocus={ true }
+        restoreFocus={ true }
+          restoreFocus={ true }
+                    // mountElement is needed for screen reader support on the Tooltip when nested inside the modal
+                    <span aria-label="Download Status Icon" aria-describedby={ myTooltipId }>
+
+=== Modal ===
+      <Badge color="green" count="Accessibility" />
+      <Badge color="blue" count="Focus Management" />
+      Managing keyboard focus is a common source of confusion when dealing with modals.
+      Below are some guidelines for correctly handling focus, but you may need to work
+        'Keyboard focus should usually go to the first interactive element within the modal.',
+        'If modal content is very important to understanding the action required, it may make sense to set initial focus on a static element at the beginning of the container. While the modal heading is generally read out, modal content can be overlooked by screen reader users if the focus is set on an element in the modal footer.',
+        'If setting the initial focus to the first interactive element causes the modal content to scroll out of view, it is better to set the focus on a static element at the beginning of the containter.',
+        'If the modal is the final step in an action that is destructive or difficult to reverse (such as deleting data), initial keyboard focus should be set on a non-destructive action (such as cancel or close) to avoid accidental clicks.'
+        'Keyboard focus should usually be returned to the triggering element. Use the restoreFocus={true} property for this behavior.',
+        'If the triggering element no longer exists, then focus should be moved to another element that makes sense such as the previous control in a set or the container for the triggering element.',
+        'If the task completed in the modal is directly related to a later step in the work flow, it may make sense to move the focus to that step.'
+          'When setting focus on a non-interactive element, please ensure that tabindex is set to -1 and that the element receiving focus is either a text element or has an accessible label.'
+      <Badge color="green" count="Accessibility" />
+      Popup content should generally be mounted to the body of the modal for screen reader support.
+Example without focusable element. <br>
+class ModalWithoutFocusableElement extends React.Component {
+            `Usage without any focusable element is not recommended, keyboard navigation and focus
+            Modal should contain at least one focusable element`
+          data-test-id="open-modal-without-focusable-element"
+          restoreFocus={ true }
+<ModalWithoutFocusableElement />
+          restoreFocus={ true }
+          restoreFocus={ true }
+Custom focus example.
+This example allows to set focus on custom element after modal is opened.
+// @example-id open-custom-focus-modal
+class CustomFocusModal extends React.Component {
+      this.resetBtnRef.current.focus();
+          data-test-id="open-custom-focus-modal"
+          title="Custom Focus Modal"
+          restoreFocus={ true }
+                data-test-id="open-custom-focus-reset-button"
+<CustomFocusModal />
+          restoreFocus={ true }
+                    // mountElement is needed for screen reader support on the Tooltip when nested inside the modal
+                    <span aria-label="Download Status Icon" aria-describedby={ myTooltipId }>
+        restoreFocus={ true }
+          aria-live="polite"
+          restoreFocus={ true }
+            aria-live="off"
+                    // mountElement is needed for screen reader support on the Tooltip when nested inside the modal
+                    <span aria-label="Download Status Icon" aria-describedby={ myTooltipId }>
+    aria-live="off"
+      <Badge color="green" count="Accessibility" />
+          restoreFocus={ true }
+          restoreFocus={ true }
+          restoreFocus={ true }
+            restoreFocus={ true }
+  // Refocus trigger button on close
+      triggerRef.current.focus();
+    'AI Mode - You will never have to code again! Let alone touch a keyboard!',
+          restoreFocus={ true }
+          restoreFocus={ true }
+          restoreFocus={ true }
+
+=== Modal ===
+        Managing keyboard focus is a common source of confusion when dealing with modals.
+        Please see the section on focus management on the main
+        <Link href="#/Layouts/Sessions?id=modal:~:text=Focus%20Management%20" type="inline" underline={ true }>Modal page</Link> for
+        tips on where to set keyboard focus when the modal is opened or closed.
+      <Badge color="green" count="Accessibility" />
+      For accessibility reasons, dialogs such as the ConfirmationModal require a title. <br />
+          restoreFocus={ true }
+Dialog without title. Note: For a11y reasons, the modal will have a default title "Please confirm"
+          restoreFocus={ true }
+          restoreFocus={ true }
+          restoreFocus={ true }
+          restoreFocus={ true }
+          restoreFocus={ true }
+          restoreFocus={ true }
+          restoreFocus={ true }
+
+=== Utility ===
+Accessibility Guidelines when using FormItemProvider with secondaryLabel
+    aria-describedby="description-link-id"
+function A11yReadMe() {
+            aria-describedby prop and an id for screen reader support.
+<A11yReadMe />
+This will add aria-label to input component of Select
+    'aria-label': 'Custom aria label'
+This will add aria-label to input component of MultiSelect
+    'aria-label': 'Custom aria label'
+
+=== Utility ===
+      <Badge color="green" count="Accessibility" />
+      Using <u>tooltipProps</u> will show the focus and tooltip otherwise it will behave as the
+Focus or hover to see the full text.
+            <Badge color="green" count="Accessibility" />
+            <Badge color="blue" count="Focus" />
+              href="https://www.w3.org/WAI/WCAG21/Understanding/focus-visible.html"
+            <strong>tooltipProps</strong> prop to ensure the link retains a visible focus ring when
+            keyboard-focused.
+                data-test-id="focus-this-link"
+
+=== Utility ===
+      <Button type="icon-default" appearance="mini" onClick={ handleRemoveSelectedFile } aria-label="remove">
+      <Button type="icon-default" appearance="mini" onClick={ onClickHandler } aria-label={ ariaLabel }>
+            'aria-label': ariaLabel
+            suffix={ file ? renderStatus() : <Button type="icon-default" appearance="mini" onClick={ handleOpenSelectFile } aria-label="select"><FolderIcon /></Button> }
+
+=== Utility ===
+        <Button onClick={ onClose } type="icon-default" aria-label="Close">
+          <PushRightIcon aria-hidden="true" />
+                <PushLeftIcon aria-hidden="true" /> Summary
+          aria-label="Change menu size"
+          <PushRightIcon style={ style } aria-hidden="true" />
+
+=== Utility ===
+        This is a Accessibility utility component, used to render content that when
+        navigating using a screen reader, will announce it's contents only to these users.
+        In order to test the examples below, fire up the screen reader and navigate the examples
+        Render interactive children like buttons, links or other elements that might receive focus
+  <Paragraph>To check this out, fire up the screen reader and focus the button below</Paragraph>
+  <Paragraph>To check this out, use the screen reader's feature to jump to heading</Paragraph>
+
+=== Badge ===
+Accessibility Guidelines
+          count="Accessibility"
+          count="Accessibility"
+          count="Accessibility"
+
