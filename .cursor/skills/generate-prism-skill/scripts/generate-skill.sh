@@ -82,7 +82,6 @@ fi
 log_header "Step 2: Creating Directory Structure"
 
 mkdir -p "$SKILL_OUTPUT_DIR/components/complex"
-mkdir -p "$SKILL_OUTPUT_DIR/scripts"
 
 log_info "Created directory structure at: $SKILL_OUTPUT_DIR"
 
@@ -138,24 +137,9 @@ if [ -f "$SCRIPT_DIR/extract-components.sh" ]; then
 fi
 
 # ============================================
-# Step 5: Copy utility scripts
+# Step 5: Create zip archive
 # ============================================
-log_header "Step 5: Copying Utility Scripts"
-
-# Copy extraction scripts to output
-cp "$SCRIPT_DIR/extract-components.sh" "$SKILL_OUTPUT_DIR/scripts/" 2>/dev/null || true
-cp "$SCRIPT_DIR/analyze-components.py" "$SKILL_OUTPUT_DIR/scripts/" 2>/dev/null || true
-
-# Make scripts executable
-chmod +x "$SKILL_OUTPUT_DIR/scripts/"*.sh 2>/dev/null || true
-chmod +x "$SKILL_OUTPUT_DIR/scripts/"*.py 2>/dev/null || true
-
-log_info "Copied utility scripts"
-
-# ============================================
-# Step 6: Create zip archive
-# ============================================
-log_header "Step 6: Creating Zip Archive"
+log_header "Step 5: Creating Zip Archive"
 
 cd "$OUTPUT_DIR"
 ZIP_FILE="prism-ui-development.zip"
